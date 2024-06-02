@@ -3,6 +3,7 @@
 Web creada para el ramo universitario de Tecnologia Cloud, durante el desarrollo de la tercera unidad.
 Creadores:
 > HideOnBuche
+and
 > LordAlfe
 
 Para correr el servidor de manera local:
