@@ -1,13 +1,18 @@
 from django.db import models
 
 # Create your models here.
-TIPO = [('RECLAMO', 'reclamo'), ('FELICITACIONES', 'Felicitaciones')]
+TIPO = [
+    [0, "consulta"],
+    [1, "reclamo"],
+    [2, "sugerencia"],
+    [3, "felicitaciones"]
+]
 
 
 class Formulario(models.Model):
     id = models.IntegerField(primary_key=True, unique=True)
     nombre = models.CharField(verbose_name="Nombre", max_length=50)
-    tipo = models.TextField(choices=TIPO)
+    tipo = models.IntegerField(choices=TIPO)
     descripcion = models.TextField(verbose_name="Descripcion")
     evidencia = models.ImageField(verbose_name="Evidencia")
 

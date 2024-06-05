@@ -6,15 +6,19 @@
 <link rel="stylesheet" href="/static/forms.css">
 {% endblock %}
 
-{% block body%}
+{% block contentbody%}
 <br>
 <article>
-    <section class="form_section">
-        <form method="post">
-            {{ form }}
-            {% csrf_token %}
-            <input type="submit" value="Enviar Solicitud">
-        </form>
-    </section>
+
+    <form method="post">
+        <h3>Formulario de Solicitudes</h3>
+
+        {% csrf_token %}
+        {{ form }}
+        <br>
+        <input type="submit" value="Enviar Solicitud">
+
+    </form>
+
 </article>
 {% endblock %}
