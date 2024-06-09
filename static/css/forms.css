@@ -53,9 +53,16 @@ h3 {
 }
 
 input[value="Enviar Solicitud"] {
-    color: #45A29E;
+    color: #66FCF1
 }
 
-input::placeholder {
-    color: #45A29E;
+input::placeholder,
+input,
+textarea {
+    color: #66FCF1;
+}
+
+select {
+    background-color: #1F2833;
+    color: #66FCF1;
 }

@@ -11,10 +11,14 @@ TIPO = [
 
 class Formulario(models.Model):
     id = models.IntegerField(primary_key=True, unique=True)
+    rut = models.CharField(verbose_name="Rut", max_length=9)
     nombre = models.CharField(verbose_name="Nombre", max_length=50)
+    apellido = models.CharField(
+        verbose_name="Apellido", max_length=50)
+    fecha = models.CharField(verbose_name="Fecha", max_length=10)
     tipo = models.IntegerField(choices=TIPO)
     descripcion = models.TextField(verbose_name="Descripcion")
-    evidencia = models.ImageField(verbose_name="Evidencia")
+    # evidencia = models.ImageField(verbose_name="Evidencia")
 
     class Meta:
         verbose_name = 'Formulario'

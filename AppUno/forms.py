@@ -6,10 +6,15 @@ from .validators import *
 class Form(forms.ModelForm):
     nombre = forms.CharField(min_length=3, max_length=50, widget=forms.TextInput(
         attrs={"placeholder": "Debe contener un minimo de tres palabras"}))
+    apellido = forms.CharField()
+    fecha = forms.CharField(widget=forms.TextInput(
+        attrs={"placeholder": "Formato: DD/MM/AAAA"}))
     tipo = forms.ChoiceField
     descripcion = forms.Textarea()
-    evidencia = forms.ImageField(required=False)
+    rut = forms.CharField(widget=forms.TextInput(
+        attrs={"placeholder": "Formato: XX.XXX.XXX-X"}))
 
     class Meta:
         model = Formulario
-        fields = ("nombre", "tipo", "descripcion", "evidencia")
+        fields = ("nombre", "apellido", "rut", "fecha",
+                  "tipo", "descripcion")

@@ -3,7 +3,7 @@
 {% block title %}Formulario{% endblock %}
 
 {% block style %}
-<link rel="stylesheet" href="/static/forms.css">
+<link rel="stylesheet" href="/static/css/forms.css">
 {% endblock %}
 
 {% block contentbody%}
@@ -13,9 +13,9 @@
     <form method="post">
         <h3>Formulario de Solicitudes</h3>
 
-        {% csrf_token %}
         {{ form }}
-        <br>
+        {% csrf_token %}
+
         <input type="submit" value="Enviar Solicitud">
 
     </form>

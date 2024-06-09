@@ -121,6 +121,7 @@ aside h2 {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     padding: 12px;
     margin-top: 20px;
+    border-radius: 12px;
 }
 
 .div_news {
@@ -137,18 +138,19 @@ aside h2 {
     border: #1F2833 solid;
     grid-column: 1/2;
     border-radius: 6px;
+    width: 200px;
 }
 
-.div_news p {
-    border: #1F2833 solid;
+.div_news a {
     opacity: 60%;
     grid-column: 2/4;
     border-radius: 6px;
+    height: 50px;
+    text-align: center;
+    color: #45A29E;
 }
-
 
 footer {
     grid-area: footer;
     margin-left: 12px;
-
 }
