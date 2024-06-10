@@ -22,20 +22,39 @@
         <h1>Cafe Gamer</h1>
     </section>
     <section class="section-02">
-        {% for key, value in cafe%}
-        <h1>{{ key }}</h1>
-        <p>{{ value }}</p>
-        {% endfor %}
+
+        <h1>Expreso o espresso / Café solo</h1>
+        <p>El café expreso consiste en uno de los tipos de café más básicos y sencillos. Su elaboración es muy fácil y,
+            únicamente, consiste en realizar la infusión de café llevando a ebullición el agua para que entren en
+            contacto con los granos de café molidos.</p>
+
+        <h1>Cortado o macchiato</h1>
+        <p>Comúnmente conocido como café cortado o macchiato, este tipo de café es uno de los más demandados.</p>
+
+        <h1>Lungo / largo</h1>
+        <p>El café lungo o largo se trata de un tipo de café en el que la extracción de agua en contacto con los granos
+            de café molidos se realiza de manera más prolongada, lo que conlleva más cantidad de infusión.</p>
+
+        <h1>Café con leche</h1>
+        <p>Con su elaboración, conseguimos un sabor más dulce y menos intenso, aunque el nivel de cafeína sigue siendo
+            muy potente.</p>
+
     </section>
 </article>
 
 <aside>
     <h2>Juegos Disponibles</h2>
     <div class="div_news">
-        {% for key, value in data%}
-        <img src="{{ value }}" alt="">
-        <a href="{{ key }}">Link a Wikipedia</a>
-        {% endfor %}
+
+        <img src="/static/img/Elden_Ring.jpeg" alt="">
+        <a href="https://es.wikipedia.org/wiki/Elden_Ring">Link a Wikipedia</a>
+
+        <img src="/static/img/Frostpunk.jpeg" alt="">
+        <a href="https://es.wikipedia.org/wiki/Frostpunk">Link a Wikipedia</a>
+
+        <img src="/static/img/Minecraft.jpg" alt="">
+        <a href="https://es.wikipedia.org/wiki/Minecraft">Link a Wikipedia</a>
+
     </div>
 
 </aside>
