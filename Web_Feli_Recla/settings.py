@@ -77,13 +77,25 @@ WSGI_APPLICATION = 'Web_Feli_Recla.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'NAME': 'webfr',
+#        'USER': 'root',
+#        'PASSWORD': '',
+#        'HOST': '127.0.0.1'
+#    }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'webfr',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1'
+        'USER': 'webfr',
+        'PASSWORD': '123456',
+        'HOST': 'localhost',
+        'PORT': 3306,
+        'OPTIONS': {'charset': 'utf8mb4'},
     }
 }
 
